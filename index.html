@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>calculator</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Calculator</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body><div>
-    <form action="#" name="a" id="ans" >
-        <input type="text" name="d" class="result" placeholder="0"><br><br>
-        <input type="button" value="9" class="buttons" onclick="a.d.value+='9'">
-        <input type="button" value="8" class="buttons" onclick="a.d.value+='8'">
-        <input type="button" value="7" class="buttons" onclick="a.d.value+='7'"> 
-        <input type="button" value="+" class="buttons" onclick="a.d.value+='+'">
-        <input type="button" value="*" class="buttons" onclick="a.d.value+='*'">
-        <br><br>
-        <input type="button" value="6" class="buttons" onclick="a.d.value+='6'">
-        <input type="button" value="7" class="buttons" onclick="a.d.value+='7'">
-        <input type="button" value="5" class="buttons" onclick="a.d.value+='5'">
-        <input type="button" value="-" class="buttons" onclick="a.d.value+='-'">
-        <input type="button" value="/" class="buttons" onclick="a.d.value+='/'">
-        <br> <br>
-        <input type="button" value="4" class="buttons" onclick="a.d.value+='4'">
-        <input type="button" value="3" class="buttons" onclick="a.d.value+='3'">
-        <input type="button" value="2" class="buttons" onclick="a.d.value+='2'">
-        <input type="button" value="1" class="buttons" onclick="a.d.value+='1'">
-        <input type="button" value="." class="buttons" onclick="a.d.value+='.'">
-        
-        <br><br>
-        
-        <input type="button" value="0" class="buttons" onclick="a.d.value+='0'">
-        <input type="button" value="00" class="buttons" onclick="a.d.value+='00'">
-        <input type="button" value="Del" class="buttons" onclick="a.d.value=''">
-        <input type="button" value="=" class="buttons" onclick="a.d.value= eval(a.d.value)">
-        
-        <br><br>
-        
-    </form></div>
+<body>
+  <div class="container">
+    <form name="a" id="ans">
+      <input type="text" name="d" class="result" placeholder="0" readonly />
+      <div class="buttons-grid">
+        <input type="button" value="9" onclick="a.d.value+='9'" />
+        <input type="button" value="8" onclick="a.d.value+='8'" />
+        <input type="button" value="7" onclick="a.d.value+='7'" />
+        <input type="button" value="+" onclick="a.d.value+='+'" />
+        <input type="button" value="*" onclick="a.d.value+='*'" />
+
+        <input type="button" value="6" onclick="a.d.value+='6'" />
+        <input type="button" value="5" onclick="a.d.value+='5'" />
+        <input type="button" value="4" onclick="a.d.value+='4'" />
+        <input type="button" value="-" onclick="a.d.value+='-'" />
+        <input type="button" value="/" onclick="a.d.value+='/'" />
+
+        <input type="button" value="3" onclick="a.d.value+='3'" />
+        <input type="button" value="2" onclick="a.d.value+='2'" />
+        <input type="button" value="1" onclick="a.d.value+='1'" />
+        <input type="button" value="." onclick="a.d.value+='.'" />
+        <input type="button" value="0" onclick="a.d.value+='0'" />
+
+        <input type="button" value="00" onclick="a.d.value+='00'" />
+        <input type="button" value="C" class="clear" onclick="a.d.value=''" />
+        <input type="button" value="=" class="equals" onclick="a.d.value=eval(a.d.value)" />
+      </div>
+    </form>
+  </div>
 </body>
 </html>

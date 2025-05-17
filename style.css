@@ -1,0 +1,48 @@
+
+body{
+    background-image: linear-gradient(red,rgb(255, 68, 0),orange,yellow,green,blue,indigo,violet);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+div{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 200px;
+    justify-content: space-evenly;
+}
+hr{
+    color: black;
+}
+form{
+    border: 5px solid rgb(1, 98, 163) ;
+    background-color: rgb(43, 165, 226);
+    border-radius: 10px;
+    font-size: x-lage;
+   
+}
+.buttons{
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(11, 12, 12);
+    font-size: 20px;
+    height: 40px;
+    width: 50px;
+     
+}
+#ans{
+    width: 300px;
+    height:350px;
+}
+.result{
+    
+    margin-top: 30px;
+    width: 250px;
+    height:40px;
+    font-size: larger;
+    border: 5px solid rgb(64, 64, 64);
+    background-color:beige;
+    border-radius: 10px;
+}
